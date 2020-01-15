@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+
+.wrapper {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: #263338;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .top {
+  height: 100px;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+header .name {
+  font-size: 1.25rem;
+  margin-right: 1.875rem;
+}
+header .user {
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  padding: 0.625rem;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  margin-top: 3.125rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.125rem;
+  padding: 0.625rem 2.5rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.operations {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  padding: 0.9375rem 2.5rem;
+}
+.operations:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.button {
+  background-color: red;
+  width: 3.125rem;
+  height: 3.125rem;
 }
