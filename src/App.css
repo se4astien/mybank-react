@@ -52,6 +52,7 @@ header .user {
   color: #fff;
   font-size: 1.25rem;
 }
+
 .operations {
   display: flex;
   justify-content: space-between;
