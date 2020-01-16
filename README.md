@@ -1,3 +1,27 @@
+# MYBANK REACT
+
+Display two accounts with one component and map().
+Wep App made with React.
+Used CSS flexbox for the layout.
+
+## Installation
+
+npx create-react-app to initialize the project.
+
+```javascript
+npx create-react-app my-project
+cd my-project
+```
+
+## Deploiement
+Here an exemple of the web-app on Netlify :
+
+https://mybank-webapp.netlify.com/
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
