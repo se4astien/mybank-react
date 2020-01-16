@@ -63,6 +63,12 @@ header .user {
   background: #f7f7f7;
 }
 
+.operations li:nth-child(2) {
+  display: flex;
+  flex: 1;
+  margin-left: 3.125rem;
+}
+
 .button {
   background-color: red;
   width: 3.125rem;
