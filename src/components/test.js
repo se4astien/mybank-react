@@ -60,34 +60,32 @@ const Accounts = () => {
   ];
   return (
     <div className="wrapper content">
-      <ul>
-        {tab.map((account, index) => {
-          return (
-            // Le premier composant Account contiendra le nom et le montant
-            <>
-              <div className="1">
-                <Account
-                  name={account.name}
-                  balance={account.balance}
-                  color={account.color}
-                />
-              </div>
-              {account.operations.map((el, index) => {
-                return (
-                  // Le dexuième composant Account contiendra les opérations
-                  <div className="2">
-                    <Account
-                      date={el.date}
-                      description={el.description}
-                      amount={el.amount}
-                    />
-                  </div>
-                );
-              })}
-            </>
-          );
-        })}
-      </ul>
+      {tab.map((account, index) => {
+        return (
+          // Le premier composant Account contiendra le nom et le montant
+          <>
+            <Account
+              name={account.name}
+              balance={account.balance}
+              color={account.color}
+            />
+
+            {account.operations.map((operation, index) => {
+              return (
+                // Le dexuième composant Operations contiendra les opérations
+                <>
+                  <Operations
+                    date={operation.date}
+                    description={operation.description}
+                    amount={operation.amount}
+                  />
+                </>
+              );
+            })}
+          </>
+        );
+      })}
+      <Button></Button>
     </div>
   );
 };

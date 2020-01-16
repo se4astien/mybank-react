@@ -70,7 +70,14 @@ header .user {
 }
 
 .button {
-  background-color: red;
-  width: 3.125rem;
-  height: 3.125rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.button button {
+  padding: 10px;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin-top: 20px;
 }

@@ -1,7 +1,5 @@
 import React from "react";
 import Account from "./Account";
-import Operations from "./Operations";
-import Button from "./Button";
 
 const Accounts = () => {
   const tab = [
@@ -62,32 +60,9 @@ const Accounts = () => {
   ];
   return (
     <div className="wrapper content">
-      {tab.map((account, index) => {
-        return (
-          // Le premier composant Account contiendra le nom et le montant
-          <>
-            <Account
-              name={account.name}
-              balance={account.balance}
-              color={account.color}
-            />
-
-            {account.operations.map((operation, index) => {
-              return (
-                // Le dexuième composant Operations contiendra les opérations
-                <>
-                  <Operations
-                    date={operation.date}
-                    description={operation.description}
-                    amount={operation.amount}
-                  />
-                </>
-              );
-            })}
-          </>
-        );
+      {tab.map(account => {
+        return <Account {...account} />;
       })}
-      <Button></Button>
     </div>
   );
 };
