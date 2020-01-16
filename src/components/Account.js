@@ -17,9 +17,7 @@ const Account = account => {
           </ul>
         );
       })}
-      <Button>
-        Le texte affiché ici n'est pas prit en compte dans le composant Button
-      </Button>
+      <Button label={"See more"}></Button>
     </>
   );
 };
