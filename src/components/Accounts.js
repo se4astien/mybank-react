@@ -1,6 +1,7 @@
 import React from "react";
 import Account from "./Account";
 import Operations from "./Operations";
+import Button from "./Button";
 
 const Accounts = () => {
   const tab = [
@@ -70,19 +71,23 @@ const Accounts = () => {
               balance={account.balance}
               color={account.color}
             />
+
             {account.operations.map((operation, index) => {
               return (
                 // Le dexuième composant Operations contiendra les opérations
-                <Operations
-                  date={operation.date}
-                  description={operation.description}
-                  amount={operation.amount}
-                />
+                <>
+                  <Operations
+                    date={operation.date}
+                    description={operation.description}
+                    amount={operation.amount}
+                  />
+                </>
               );
             })}
           </>
         );
       })}
+      <Button></Button>
     </div>
   );
 };
